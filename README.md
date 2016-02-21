@@ -62,6 +62,17 @@ Depending on your proguard config and usage, you may need to include the followi
 }
 ```
 
+AndroidManifest.xml
+-------------------
+
+You need to ensure your application has permission, else images from internet will not load.
+```xml
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+  <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+```
+
+
+
 How do I use Glide?
 -------------------
 Checkout the [GitHub wiki][2] for pages on a variety of topics, and see the [javadocs][3].
